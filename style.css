@@ -1,0 +1,371 @@
+* {
+    font-family: 'Maven Pro', 'Open Sans', sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+main {
+    padding: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+main h2 {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 18%;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #2EB167;
+}
+
+
+main p {
+    font-size: 12px;
+    font-weight: 400;
+    color: #777777;
+}
+
+.flex-container > * {
+    flex: 1 100%;
+}
+
+.top-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    background: url(Assets/black-and-white-clouds-fog.jpg) no-repeat;
+    height: 680px;
+    background-size: cover;
+}
+
+#logo-img {
+    position: absolute;
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    background-color: #000;
+    border: solid #fff 2px;
+    margin: 15px;
+}
+
+#logo-img:hover {
+    opacity: 0.8;
+}
+
+nav {
+    margin-right: 20px;
+}
+
+.submenu li {
+    display: inline-block;
+    margin: 5px;
+}
+
+.submenu a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.submenu a:hover {
+    text-decoration: none;
+    color: #2EB167;
+}
+
+.top-text-container {
+    margin-top: 20vh;
+    color: #fff;
+}
+
+.btn-top {
+    background-color: #2EB167;
+    color: #fff;
+    cursor: pointer;
+    padding: 1em 2em;
+    letter-spacing: 0.05rem;
+    text-decoration: none;
+}
+
+.btn-top:hover {
+    background-color: #fff;
+    color: #2EB167;
+    border: 1px solid #2eb167;
+    transition-duration: 0.5s;
+}
+
+.show,
+.show2 {
+    background-color: #2EB167;
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid #2eb167;
+}
+
+.show:hover,
+.show2:hover {
+    background-color: #fff;
+    color: #2EB167;
+    border: 1px solid #2eb167;
+    transition-duration: 0.5s;
+}
+
+.abilities-container,
+.contact-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.about-me-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-container {
+    display: inline-flex;
+}
+
+.profile p:first-child {
+    color: #2eb167;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.profile img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+.tab {
+    flex-basis: 100%;
+    align-self: baseline;
+    justify-content: space-between;
+    margin: 10px;
+    margin-left: 0px;
+}
+
+.skills p {
+    margin-bottom: 0;
+}
+
+.all-rounded {
+    border-radius: 5px;
+}
+
+#progress-bar {
+    width: 400px;
+    background: #cccccc;
+    position: relative;
+}
+
+#progress-bar-percentage {
+    background: #2EB167;
+    padding: 5px 0px;
+    color: #FFF;
+    text-align: center;
+    height: 20px;
+}
+
+#progress-bar-percentage span {
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    left: 0;
+}
+
+.portofolio {
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.portofolio p:nth-child(2) {
+    padding-bottom: 20px;
+}
+
+.thumbs {
+    display: block;
+}
+
+.btn {
+    background-color: #2EB167;
+    color: #fff;
+    border-radius: 25px;
+    cursor: pointer;
+    padding: 7px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: #2EB167;
+    border: 1px solid #2eb167;
+    transition-duration: 0.5s;
+}
+
+.abilities img {
+    height: 80px;
+}
+
+.contact {
+    background-color: #EEEEEE;
+}
+
+footer {
+    background-color: #333333;
+    color: #fff;
+    font-size: 12px;
+}
+
+.contact img {
+    height: 40px;
+}
+
+#return-to-top {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background: rgb(0, 0, 0);
+    background: #2eb167;
+    opacity: 0.8;
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+#return-to-top img {
+    width: 20px;
+    position: relative;
+    left: 1px;
+    top: 15px;
+}
+
+#return-to-top:hover {
+    opacity: 1;
+}
+
+#return-to-top:hover i {
+    color: #fff;
+    top: 5px;
+}
+
+.menu-icon {
+    display: none;
+    width: 35px;
+    margin: 10px;
+}
+
+.menu-icon:hover {
+    cursor: pointer;
+}
+
+.menu-icon:active {
+    opacity: 0.6;
+}
+
+@media only screen and (max-width: 1024px) {
+    main {
+        padding: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #progress-bar {
+        width: 200px;
+    }
+    #progress-bar-percentage {
+        height: 10px;
+    }
+    #progress-bar-percentage span {
+        bottom: 1px;
+    }
+    .skills p {
+        padding-right: 40px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .menu-icon {
+        display: block;
+        margin-bottom: 0;
+    }
+    .hide {
+        display: none;
+    }
+    nav {
+        position: relative;
+        display: inline-block;
+        margin-right: 5px;
+    }
+    .submenu {
+        position: absolute;
+        right: 10px;
+        padding-left: 0;
+        margin-top: 5px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+    .submenu a {
+        color: black;
+        padding: 5px 10px;
+        text-decoration: none;
+        display: block;
+    }
+    .about-me-container,
+    .abilities-container {
+        flex-direction: column;
+    }
+    .tab {
+        flex-basis: 100%;
+        align-self: center;
+        justify-content: center;
+        margin: 10px;
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 426px) {
+    .logo {
+        width: 150px;
+        height: 100px;
+    }
+    #progress-bar {
+        width: 200px;
+    }
+    #progress-bar-percentage {
+        height: 10px;
+    }
+
+    .skills p {
+        padding-right: 0;
+    }
+}
