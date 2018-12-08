@@ -22,18 +22,27 @@ main {
     padding-right: 100px;
 }
 
-main h2 {
+h1{
+    font-size: 2.5em;
+}
+
+h2 {
     content: "";
     display: block;
     margin: 0 auto;
-    width: 18%;
-    padding-bottom: 5px;
+    width: 15%;
+    padding-bottom: 3px;
     border-bottom: 2px solid #2EB167;
+    font-size: 2em;
+}
+.contact p{
+    font-size: 1em;
+    font-weight: 400;
 }
 
 
 main p {
-    font-size: 12px;
+    font-size: 1em;
     font-weight: 400;
     color: #777777;
 }
@@ -59,10 +68,8 @@ header {
 #logo-img {
     position: absolute;
     border-radius: 50%;
-    height: 70px;
-    width: 70px;
-    background-color: #000;
-    border: solid #fff 2px;
+    height: 80px;
+    width: 80px;
     margin: 15px;
 }
 
@@ -77,6 +84,8 @@ nav {
 .submenu li {
     display: inline-block;
     margin: 5px;
+    font-size: 1em;
+    font-weight: 600;
 }
 
 .submenu a {
@@ -95,12 +104,14 @@ nav {
 }
 
 .btn-top {
+    font-size: 1em;
     background-color: #2EB167;
     color: #fff;
     cursor: pointer;
-    padding: 1em 2em;
+    padding: 1em 2.4em;
     letter-spacing: 0.05rem;
     text-decoration: none;
+    margin-right: 1.5em;
 }
 
 .btn-top:hover {
@@ -112,6 +123,7 @@ nav {
 
 .show,
 .show2 {
+    font-size: 1em;
     background-color: #2EB167;
     color: #fff;
     cursor: pointer;
@@ -224,6 +236,11 @@ nav {
     height: 80px;
 }
 
+.abilities-container h3{
+    font-size: 1.5em;
+    text-decoration: underline #2EB167;
+}
+
 .contact {
     background-color: #EEEEEE;
 }
@@ -231,7 +248,7 @@ nav {
 footer {
     background-color: #333333;
     color: #fff;
-    font-size: 12px;
+    font-size: 0.9em
 }
 
 .contact img {
@@ -310,6 +327,9 @@ footer {
     }
     .skills p {
         padding-right: 40px;
+    }
+    h2{
+        width: 40%;
     }
 }
 
